@@ -1,0 +1,102 @@
+/* -----------------------------
+
+Colour Palette
+
+#B8E0D3 Middle Blue Green
+#D4ECE5 light Cyan
+#E3F3ED mint cream
+#FFFFFF white
+#8CA0D7 Wild Blue Yonder (light blue)
+#1A2C74 Space Cadet (blue)
+#A4B4DF light blue
+#EFD6AC Wheat
+
+
+
+
+-------------------------------*/
+
+/*-----------------   Global Styles --------------------*/
+* {
+  box-sizing: border-box;
+}
+/* -----------------   Section Styles ------------------- */
+/* header */
+header {
+  background-color: #efd6ac; /* Wheat */
+  display: flex;
+}
+
+/* nav {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  position: sticky;
+  background-color: red;
+  z-index: 1;
+} */
+
+.nav-menu {
+  background-color: #b8e0d3; /* Middle Blue Green */
+  display: flex;
+  flex-wrap: wrap; /* double check if working*/
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+/* About Me */
+#about-me {
+  background-color: #8ca0d7; /* Wild Blue Yonder (light blue) */
+}
+
+/* projects */
+
+.projects {
+  background-color: #d4ece5; /* light Cyan */
+  display: flex;
+}
+
+/* CV */
+
+#cv {
+  background-color: #a4b4df; /* light blue*/
+  display: flex;
+}
+
+/* skills */
+.skills {
+  background-color: #b8e0d3; /* Middle Blue Green */
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  align-items: left;
+}
+
+.skills-logo {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 2rem;
+  max-height: 2rem;
+}
+figcaption {
+  padding: 20px;
+  text-align: center;
+}
+.skills h1 {
+  margin-bottom: 3rem;
+}
+
+/* footer */
+
+#foot {
+  background-color: #1a2c74; /* Space Cadet (blue) */
+}
