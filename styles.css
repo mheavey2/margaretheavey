@@ -14,6 +14,7 @@ Colour Palette
 #dadae3 pale grey
 #a69eb0 purple/grey
 #000000 black
+#424B54 charcoal
 
 
 
@@ -23,19 +24,23 @@ Colour Palette
 /*-----------------   Global Styles --------------------*/
 * {
   box-sizing: border-box;
-  background-color: #efeff2;
+  background-color: #dadae3;
 }
 /* -----------------   Section Styles ------------------- */
 /* header */
 header {
-  background-color: #1a2c74; /* Space Cadet (blue) */
-  display: flex;
-  justify-content: left;
+  display: block;
+  /* justify-content: left; */
 }
 
 header h1,
-header h2 {
+header h2,
+header h3,
+#emailLink a {
   background-color: #a69eb0; /* purple/grey */
+}
+#emailLink {
+  font-style: italic;
 }
 
 #header-item {
@@ -47,7 +52,7 @@ header h2 {
   width: 100%;
   border-color: red;
   border-style: double;
-  max-width: 75%;
+  max-width: 100%;
 }
 nav {
   display: block;
@@ -74,20 +79,33 @@ nav {
 }
 
 /*  Main */
-/* main {
+main {
   background-color: #efeff2;
-} */
+}
 
 /* projects */
 
-.projects {
+.projects-container,
+.cv-container {
+  display: block;
+}
+#project-item-container,
+#cv-item-container {
   display: flex;
+  justify-content: space-around;
+}
+
+#project-item {
+  display: inline-flex;
 }
 
 /* CV */
 
-#cv {
-  display: flex;
+.cv-item {
+  display: block;
+}
+.cv-item h5 {
+  font-style: italic;
 }
 
 /* skills */
