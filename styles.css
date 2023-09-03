@@ -10,6 +10,10 @@ Colour Palette
 #1A2C74 Space Cadet (blue)
 #A4B4DF light blue
 #EFD6AC Wheat
+#efeff2 very pale grey
+#dadae3 pale grey
+#a69eb0 purple/grey
+#000000 black
 
 
 
@@ -19,27 +23,44 @@ Colour Palette
 /*-----------------   Global Styles --------------------*/
 * {
   box-sizing: border-box;
+  background-color: #efeff2;
 }
 /* -----------------   Section Styles ------------------- */
 /* header */
 header {
-  background-color: #efd6ac; /* Wheat */
+  background-color: #1a2c74; /* Space Cadet (blue) */
   display: flex;
+  justify-content: left;
 }
 
-/* nav {
-  display: flex;
+header h1,
+header h2 {
+  background-color: #a69eb0; /* purple/grey */
+}
+
+#header-item {
+  background-color: #a69eb0; /* purple/grey */
+  margin: 0rem;
+  padding: 0rem;
+  text-align: left;
+  height: 100%;
+  width: 100%;
+  border-color: red;
+  border-style: double;
+  max-width: 75%;
+}
+nav {
+  display: block;
   align-items: center;
-  height: 2rem;
-  position: sticky;
-  background-color: red;
-  z-index: 1;
-} */
+  height: 3rem;
+  border-color: blue;
+  border-style: double;
+}
 
 .nav-menu {
-  background-color: #b8e0d3; /* Middle Blue Green */
-  display: flex;
-  flex-wrap: wrap; /* double check if working*/
+  display: block;
+  border-color: orange;
+  border-style: double;
   justify-content: space-between;
   list-style-type: none;
   align-items: center;
@@ -49,30 +70,28 @@ header {
   display: inline-block;
   padding: 0.75rem;
   text-align: center;
+  font-size: 0.9rem;
 }
 
-/* About Me */
-#about-me {
-  background-color: #8ca0d7; /* Wild Blue Yonder (light blue) */
-}
+/*  Main */
+/* main {
+  background-color: #efeff2;
+} */
 
 /* projects */
 
 .projects {
-  background-color: #d4ece5; /* light Cyan */
   display: flex;
 }
 
 /* CV */
 
 #cv {
-  background-color: #a4b4df; /* light blue*/
   display: flex;
 }
 
 /* skills */
 .skills {
-  background-color: #b8e0d3; /* Middle Blue Green */
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
@@ -83,20 +102,22 @@ header {
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  max-width: 2rem;
-  max-height: 2rem;
+  align-content: center;
+  max-width: 3rem;
+  max-height: 3rem;
 }
+
 figcaption {
-  padding: 20px;
+  margin-top: 20px;
   text-align: center;
 }
-.skills h1 {
+.skills h2 {
   margin-bottom: 3rem;
 }
 
 /* footer */
-
-#foot {
-  background-color: #1a2c74; /* Space Cadet (blue) */
+footer {
+  background-color: #a69eb0; /* purple/grey */
+  border-color: red;
+  border-style: double;
 }

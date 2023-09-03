@@ -12,50 +12,59 @@
   <body>
     <header>
       <!--Banner heading with name & Software Developer-->
-      <h1> Margaret Heavey </h1>
-      <h2>Software Developer</h2>
+      <div id="header-item">
+        <h1 > Margaret Heavey </h1>
+        <h2>Software Developer</h2>
+      </div>
+    <div>
+      <p>Contact: <span><a href="mailto:mheavey2@gmail.com">Email</a></span></p>
+
+    </div>
+     
+      <!--Nav bar menu linking sections-->
+     
        
      </header>
-     <!--Nav bar menu linking sections-->
+
      <nav class="navbar" role="navigation" aria-label="main menu">
-           <ul class="nav-menu">
-        <li class="nav-item"><a href="#about-me">About Me</a></li>
-        <li class="nav-item"><a href="#projects">Projects</a></li>
-        <li class="nav-item"><a href="#cv">Curriculum Vitae</a></li>
-        <li class="nav-item"><a href="#skills">Skills</a></li>
-        <!-- <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> -->
-      </ul>
-    
-    </nav>
+      <ul class="nav-menu">
+   <li class="nav-item"><a href="#about-me">About Me</a></li>
+   <li class="nav-item"><a href="#projects">Projects</a></li>
+   <li class="nav-item"><a href="#cv">Curriculum Vitae</a></li>
+   <li class="nav-item"><a href="#skills">Skills</a></li>
+   <!-- <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> -->
+ </ul>
+
+</nav>
+     
     <!--Sections: about me, projects (hyperlinked images, show info pop up wtih explanation of project, goal, & link to github code), cv, 
       skills (show logos e.g HTML5, CSS etc )-->
     <main>
       <section id="about-me">
         <div>
-        <h1>About Me</h1>
+        <h2>About Me</h2>
         <p>
-          My name is Margaret. I have a background in Science and am working to
-          change to a career in Software Development.
+          My name is Margaret. I have a background in Science and am transitioning to a career in Software Development.
         </p>
       </div>
       
+      </section>
 
-      
-      </section>
       <section class="projects">
-        <div>
-          <h1>Projects</h1>
-        </div>
+        <h2>Projects</h2>
+        <h3>Weather App</h3>
+        
       </section>
+
         <section id="cv">
-               <div>   
+               <dsiv>   
          
           <section>
-          <h1>Curriculum Vitae</h1>
+          <h2>Curriculum Vitae</h2>
           <div>
-            <h2>Employment</h2>
+            <h3>Employment</h3>
             <div>
-              <h3>Regeneron Pharmaceuticals, Limerick</h3>
+              <h4>Regeneron Pharmaceuticals, Limerick</h4>
             </div>
           </div>
         </div>
@@ -63,7 +72,7 @@
       
       <section class="skills">
         <div>
-          <h1>Skills</h1>
+          <h2>Skills</h2>
           <figure class="skills-logo">
             
             <img src="/img/CssLogo.png" alt="CSS Logo">
@@ -98,8 +107,11 @@
       </section>
     </main>
     <!--footer with contact info-->
-    <footer id="foot">
+    <footer>
       <p>Contact Info</p>
+      <a href="mailto:mheavey2@gmail.com">Email</a>
+      <a href="">GitHub</a>
+      <a href="">LinkedIn</a>
     </footer>
   </body>
 </html>
