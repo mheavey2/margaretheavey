@@ -43,6 +43,12 @@ header h3,
   font-style: italic;
 }
 
+#contactLogo {
+  height: 1.7em;
+  width: 1.7em;
+  background-color: inherit;
+}
+
 #header-item {
   background-color: #a69eb0; /* purple/grey */
   margin: 0rem;
@@ -138,4 +144,11 @@ footer {
   background-color: #a69eb0; /* purple/grey */
   border-color: red;
   border-style: double;
+}
+#contactLogoFooter {
+  height: 3.5em;
+  width: 3.5em;
+  background-color: inherit;
+  padding: 0.5em;
+  margin: 0.5em;
 }

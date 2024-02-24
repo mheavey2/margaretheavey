@@ -18,12 +18,13 @@
 
       <h1>Margaret Heavey</h1>
       <h2>Software Developer</h2>
-      <h3>
+      <!-- TODO: Remove? -->
+      <!-- <h3 id="emailLink">
         Contact:
-        <span id="emailLink"
-          ><a href="mailto:mheavey2@gmail.com">Email</a></span
-        >
-      </h3>
+        <a href="mailto:mheavey2@gmail.com"
+          ><img id="contactLogo" src="./img/emailIcon.png" alt="email icon"
+        /></a>
+      </h3> -->
 
       <!--Nav bar menu linking sections-->
     </header>
@@ -31,9 +32,10 @@
     <nav class="navbar" role="navigation" aria-label="main menu">
       <ul class="nav-menu">
         <li class="nav-item"><a href="#about-me">About Me</a></li>
+        <li class="nav-item"><a href="#skills">Technical Skills</a></li>
         <li class="nav-item"><a href="#projects">Projects</a></li>
         <li class="nav-item"><a href="#cv">Curriculum Vitae</a></li>
-        <li class="nav-item"><a href="#skills">Skills</a></li>
+
         <!-- <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> -->
       </ul>
     </nav>
@@ -44,8 +46,8 @@
       <section id="about-me">
         <h2>About Me</h2>
         <p>
-          My name is Margaret. I have a background in Science and am pivoting to
-          a career in Software Development. I have spent the last 7 years of my
+          HI, I'm Margaret. I have a background in Science and am pivoting to a
+          career in Software Development. I have spent the last 7 years of my
           career refining my analytical, technical, problem solving and
           leadership skills in the BioPharmaceutical and Medical Device
           Industry.
@@ -77,6 +79,7 @@
       <section class="skills">
         <div>
           <h2>Technical Skills</h2>
+          <p>HTML, CSS, JavaScript, TypeScript, ReactJS, AngularJS, SQL</p>
           <figure class="skills-logo">
             <img src="/img/CssLogo.png" alt="CSS Logo" />
             <figcaption>CSS</figcaption>
@@ -170,10 +173,22 @@
     </main>
     <!--footer with contact info-->
     <footer>
-      <p>Contact Info</p>
-      <a href="mailto:mheavey2@gmail.com">Email</a>
-      <a href="">GitHub</a>
-      <a href="">LinkedIn</a>
+      <p>Contact Me</p>
+      <a href="mailto:mheavey2@gmail.com"
+        ><img id="contactLogoFooter" src="./img/emailIcon.png" alt="email icon"
+      /></a>
+      <a href=""
+        ><img
+          id="contactLogoFooter"
+          src="./img/gitHubLogo.png"
+          alt="GitHub Logo"
+      /></a>
+      <a href=""
+        ><img
+          id="contactLogoFooter"
+          src="./img/linkedInLogo.jpg"
+          alt="LinkedIn Logo"
+      /></a>
     </footer>
   </body>
 </html>
