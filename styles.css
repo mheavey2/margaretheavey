@@ -156,6 +156,7 @@ main {
 }
 #cv-emp-item h4 {
   color: #6580f0;
+  font-weight: 200;
 }
 #cv-emp-item h5 {
   margin-left: 1em;
@@ -163,7 +164,7 @@ main {
 
 #cv-emp-item li {
   list-style-type: none;
-  margin-bottom: 0.6em;
+  margin-bottom: 1.5em;
   font-size: 0.8em;
   font-weight: 800;
 }
