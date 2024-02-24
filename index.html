@@ -27,110 +27,134 @@
       </h3> -->
 
       <!--Nav bar menu linking sections-->
+      <nav class="navbar" role="navigation" aria-label="main menu">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#about-me">About Me</a></li>
+          <li class="nav-item"><a href="#skills">Technical Skills</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#cv">Curriculum Vitae</a></li>
+
+          <!-- <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> -->
+        </ul>
+      </nav>
     </header>
-
-    <nav class="navbar" role="navigation" aria-label="main menu">
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="#about-me">About Me</a></li>
-        <li class="nav-item"><a href="#skills">Technical Skills</a></li>
-        <li class="nav-item"><a href="#projects">Projects</a></li>
-        <li class="nav-item"><a href="#cv">Curriculum Vitae</a></li>
-
-        <!-- <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> -->
-      </ul>
-    </nav>
 
     <!--Sections: about me, projects (hyperlinked images, show info pop up wtih explanation of project, goal, & link to github code), cv, 
       skills (show logos e.g HTML5, CSS etc )-->
     <main>
-      <section id="about-me">
-        <h2>About Me</h2>
-        <p>
-          HI, I'm Margaret. I have a background in Science and am pivoting to a
-          career in Software Development. I have spent the last 7 years of my
-          career refining my analytical, technical, problem solving and
-          leadership skills in the BioPharmaceutical and Medical Device
-          Industry.
-        </p>
-        <p>
-          <!-- hard skills -->
-          Throughout my career to date I have gained valuable experience in
-          laboratory analytical techniques, data analysis, technical writing,
-          data trending and review, problem solving and project and time
-          management.
-        </p>
-        <p>
-          <!-- soft skills -->
-          In addition, as a team lead, I developed skills in leadership,
-          communication, adaptability and decision making, continuous
-          improvement and implementation. Collaborating with a variety of
-          intra-functional and cross-functional internal and external
-          stakeholders further improved these skills to ensure deliverables were
-          realistic, achievable and that deadlines were met.
-        </p>
-        <p>
-          <!-- why new career -->
-          While I enjoyed working in the scientific industry, I am ready to
-          explore other career opportunities and develop the Software
-          Development skills I have learned.
-        </p>
+      <section class="info-container">
+        <section class="about-me">
+          <h2>About Me</h2>
+          <p>
+            Hi, I'm Margaret. I have a background in Science and am pivoting to
+            a career in Software Development. I have spent the last 7 years of
+            my career refining my analytical, technical, problem solving and
+            leadership skills in the BioPharmaceutical and Medical Device
+            Industry.
+          </p>
+          <p>
+            <!-- hard skills -->
+            Throughout my career to date I have gained valuable experience in
+            laboratory analytical techniques, data analysis, technical writing,
+            data trending and review, problem solving and project and time
+            management.
+          </p>
+          <p>
+            <!-- soft skills -->
+            In addition, as a team lead, I developed skills in leadership,
+            communication, adaptability and decision making, continuous
+            improvement and implementation. Collaborating with a variety of
+            intra-functional and cross-functional, internal and external
+            stakeholders further improved these skills to ensure deliverables
+            were realistic, achievable and that deadlines were met.
+          </p>
+          <p>
+            <!-- why new career -->
+            While I enjoyed working in the scientific industry, I am ready to
+            explore other career opportunities and develop the Software
+            Development skills I have learned.
+          </p>
+        </section>
+        <!-- Technical Skills -->
+        <section class="skills">
+          <div>
+            <h2>Technical Skills</h2>
+            <!-- TODO: list or logo -->
+            <!-- <p>HTML, CSS, JavaScript, TypeScript, ReactJS, AngularJS, SQL</p> -->
+            <figure class="skills-logo">
+              <img src="/img/CssLogo.png" alt="CSS Logo" />
+              <figcaption>CSS</figcaption>
+            </figure>
+            <figure class="skills-logo">
+              <img src="/img/HTML5Logo.png" alt="HTML Logo" />
+              <figcaption>HTML</figcaption>
+            </figure>
+            <figure class="skills-logo">
+              <img src="/img/JSLogo.png" alt="Javascript Logo" />
+              <figcaption>Javascript</figcaption>
+            </figure>
+            <figure class="skills-logo">
+              <img src="/img/TSLogo.png" alt="Typescript Logo" />
+              <figcaption>Typescript</figcaption>
+            </figure>
+            <figure class="skills-logo">
+              <img src="/img/JavaLogo.png" alt="Java Logo" />
+              <figcaption>Java</figcaption>
+            </figure>
+            <figure class="skills-logo">
+              <img src="/img/SQLLogo.jpeg" alt="SQL Logo" />
+              <figcaption>SQL</figcaption>
+            </figure>
+          </div>
+        </section>
+        <!-- Projects -->
+        <section class="projects-container">
+          <h2>Projects</h2>
+          <div id="project-item-container">
+            <div id="project-item">
+              <h3>Weather App</h3>
+            </div>
+            <div id="project-item">
+              <h3>Fortune Cookie</h3>
+            </div>
+            <div id="project-item">
+              <h3>Bookstore Webpage</h3>
+            </div>
+            <div id="project-item">
+              <h3>Magic Yes/No Ball</h3>
+            </div>
+          </div>
+        </section>
       </section>
-      <!-- Technical Skills -->
-      <section class="skills">
-        <div>
-          <h2>Technical Skills</h2>
-          <p>HTML, CSS, JavaScript, TypeScript, ReactJS, AngularJS, SQL</p>
-          <figure class="skills-logo">
-            <img src="/img/CssLogo.png" alt="CSS Logo" />
-            <figcaption>CSS</figcaption>
-          </figure>
-          <figure class="skills-logo">
-            <img src="/img/HTML5Logo.png" alt="HTML Logo" />
-            <figcaption>HTML</figcaption>
-          </figure>
-          <figure class="skills-logo">
-            <img src="/img/JSLogo.png" alt="Javascript Logo" />
-            <figcaption>Javascript</figcaption>
-          </figure>
-          <figure class="skills-logo">
-            <img src="/img/TSLogo.png" alt="Typescript Logo" />
-            <figcaption>Typescript</figcaption>
-          </figure>
-          <figure class="skills-logo">
-            <img src="/img/JavaLogo.png" alt="Java Logo" />
-            <figcaption>Java</figcaption>
-          </figure>
-          <figure class="skills-logo">
-            <img src="/img/SQLLogo.jpeg" alt="SQL Logo" />
-            <figcaption>SQL</figcaption>
-          </figure>
-        </div>
-      </section>
-      <!-- Projects -->
-      <section class="projects-container">
-        <h2>Projects</h2>
-        <div id="project-item-container">
-          <div id="project-item">
-            <h3>Weather App</h3>
-          </div>
-          <div id="project-item">
-            <h3>Fortune Cookie</h3>
-          </div>
-          <div id="project-item">
-            <h3>Bookstore Webpage</h3>
-          </div>
-          <div id="project-item">
-            <h3>Magic Yes/No Ball</h3>
-          </div>
-        </div>
-      </section>
-
       <section class="cv-container">
         <div class="cv-item-container">
           <h2>Curriculum Vitae</h2>
           <div class="cv-item">
             <h3>Employment</h3>
             <div id="cv-emp-item">
+              <h4>Regeneron Pharmaceuticals, Limerick</h4>
+              <ul>
+                <li>
+                  Senior QC Analyst (Technical Resources)
+                  <span>December 2023 - Present</span>
+                </li>
+                <li>
+                  QC Analyst (Technical Resources)
+                  <span>October 2022 - Dec 2023</span>
+                </li>
+                <li>Lead QC Analyst <span>June 2018 - October 2022</span></li>
+              </ul>
+              <div id="cv-emp-item">
+              <h4>Complete Laboratory Solutions (CLS), Galway</h4>
+              <ul>
+                <li>
+                  QC Microbiology Team Lead
+                  <span>December 2016 - June 2018</span>
+                </li>
+                <li>QC Microbiologist <span>May 2016 - December 2016</span></li>
+              </ul>
+
+<!-- TODO: as li or headings? -->
               <h4>Regeneron Pharmaceuticals, Limerick</h4>
               <h5>
                 Senior QC Analyst (Technical Resources)
@@ -140,37 +164,53 @@
                 QC Analyst (Technical Resources)
                 <span>October 2022 - Dec 2023</span>
               </h5>
+
               <h5>Lead QC Analyst <span>June 2018 - October 2022</span></h5>
             </div>
             <div id="cv-emp-item">
               <h4>Complete Laboratory Solutions (CLS), Galway</h4>
-              <h5>
+               <h5>
                 QC Microbiology Team Lead <span>December 2016 - June 2018</span>
               </h5>
-              <h5>QC Microbiologist <span>May2016-December 2016</span></h5>
+              <h5>QC Microbiologist <span>May 2016 - December 2016</span></h5>
             </div>
           </div>
 
           <div class="cv-item">
-            <h3>Education</h3>
-            <h4>Higher Diploma in Software Development (NFQ level 8)</h4>
-            <h5>
-              Galway Mayo Institute of Technology, Galway <span>2019-2022</span>
-            </h5>
-            <h4>Postgraduate Diploma in Applied Microbiology (NFQ level 9)</h4>
-            <h5>
-              National University of Ireland, Galway <span>2015-2016</span>
-            </h5>
-            <h4>Master of Science in Ecological Assessment (NFQ level 9)</h4>
-            <h5>Universty College Cork <span>2010-2011</span></h5>
-            <h4>Bachelor of Science in Microbiology (NFQ level 8)</h4>
-            <h5>
-              National University of Ireland, Galway <span>2004-2009</span>
-            </h5>
+            <div id="cv-edu-container">
+              <h3>Education</h3>
+              <div id="cv-edu-item">
+                <h4>Higher Diploma in Software Development (NFQ level 8)</h4>
+                <p>
+                Galway Mayo Institute of Technology, Galway
+                 <span>2019-2022</span>
+               </p>
+              </div>
+               <div id="cv-edu-item">
+              <h4>
+                Postgraduate Diploma in Applied Microbiology (NFQ level 9)
+              </h4>
+              <p>
+                National University of Ireland, Galway <span>2015-2016</span>
+              </p>
+              </div>
+               <div id="cv-edu-item">
+              <h4>Master of Science in Ecological Assessment (NFQ level 9)</h4>
+              <p>Universty College Cork <span>2010-2011</span></p>
+              </div>
+               <div id="cv-edu-item">
+              <h4>Bachelor of Science in Microbiology (NFQ level 8)</h4>
+              <p>
+                National University of Ireland, Galway <span>2004-2009</span>
+              </p>
+              </div>
+            </div>
+          
           </div>
         </div>
       </section>
     </main>
+
     <!--footer with contact info-->
     <footer>
       <p>Contact Me</p>

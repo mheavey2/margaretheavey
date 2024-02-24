@@ -29,8 +29,14 @@ Colour Palette
 /* -----------------   Section Styles ------------------- */
 /* header */
 header {
-  display: block;
-  /* justify-content: left; */
+  display: flex;
+}
+
+header h1 {
+  margin-left: 2em;
+}
+header h2 {
+  margin: 1.1em 2em;
 }
 
 #contactLogo {
@@ -56,19 +62,29 @@ nav {
 /* TODO: move navbar */
 .nav-menu {
   display: block;
-
-  justify-content: space-between;
   list-style-type: none;
   align-items: center;
 }
 
 .nav-item {
   display: inline-block;
-  padding: 0.75rem;
+  padding: 0.5rem;
   text-align: center;
   font-size: 0.9rem;
 }
 
+main {
+  display: flex;
+}
+
+.info-container {
+  /* display: flex; */
+  margin-left: 5em;
+}
+
+.about-me {
+  width: 85%;
+}
 /* projects */
 
 .projects-container {
@@ -88,25 +104,47 @@ nav {
 
 /* CV */
 .cv-container {
-  display: inline-flex;
-  justify-content: flex-end;
+  display: block;
+  width: 45%;
+  margin-right: 5em;
+  /* justify-content: flex-end; */
 }
 .cv-item-container {
+  display: block;
+  /* TODO: remove bkgrd col */
   background-color: #1a2c74;
 }
-/* .cv-item {
-  display: block;
-} */
-.cv-item h5 {
-  font-style: italic;
+
+.cv-item h5 :first-child {
+  font-weight: 200;
 }
 .cv-item h3 {
   background-color: #8ca0d7;
 }
-.cv-item h4 {
+#cv-emp-item h4 {
   color: #6580f0;
 }
+#cv-emp-item h5 {
+  margin-left: 1em;
+}
 
+#cv-emp-item li {
+  list-style-type: none;
+  margin-bottom: 0.6em;
+  font-size: 0.8em;
+  font-weight: 800;
+}
+#cv-emp-item li span {
+  font-weight: 200;
+}
+#cv-edu-item p {
+  color: #6580f0;
+  font-size: 0.9em;
+}
+#cv-edu-item span {
+  color: #000000;
+  font-size: 0.9em;
+}
 /* skills */
 .skills {
   display: flex;
