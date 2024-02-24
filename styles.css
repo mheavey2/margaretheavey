@@ -71,12 +71,13 @@ nav {
 
 /* projects */
 
-.projects-container,
-.cv-container {
-  display: block;
+.projects-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 70%;
 }
-#project-item-container,
-#cv-item-container {
+#project-item-container {
   display: flex;
   justify-content: space-around;
 }
@@ -86,12 +87,24 @@ nav {
 }
 
 /* CV */
-
-.cv-item {
-  display: block;
+.cv-container {
+  display: inline-flex;
+  justify-content: flex-end;
 }
+.cv-item-container {
+  background-color: #1a2c74;
+}
+/* .cv-item {
+  display: block;
+} */
 .cv-item h5 {
   font-style: italic;
+}
+.cv-item h3 {
+  background-color: #8ca0d7;
+}
+.cv-item h4 {
+  color: #6580f0;
 }
 
 /* skills */
@@ -120,12 +133,6 @@ figcaption {
 }
 
 /* footer */
-/* TODO:Remove border etc */
-/* footer { */
-/* background-color: #a69eb0; purple/grey */
-/* border-color: red; */
-/* border-style: double; */
-/* } */
 
 #contactLogoFooter {
   height: 3.5em;
