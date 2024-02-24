@@ -91,17 +91,17 @@ main {
 .projects-container {
   display: flex;
   flex-direction: row wrap;
-
   justify-content: space-around;
 
-  width: 70%;
+  width: 80%;
 }
 .project-item-container {
   background-color: transparent;
-  width: 10em;
-  height: 10em;
+  width: 100%;
+  height: 15em;
   border: 0.1px solid #f1f1f1;
-  /* perspective: 1000px; Remove this if you don't want the 3D effect */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: 0.75em;
 }
 .project-item {
   position: relative;
@@ -135,6 +135,14 @@ main {
   backface-visibility: hidden;
 }
 
+.projectImage {
+  position: relative;
+  height: 80%;
+  width: 100%;
+}
+.project-item-rear {
+  font-size: 0.9em;
+}
 /*  ***************                        CV              *************** */
 .cv-container {
   display: block;
