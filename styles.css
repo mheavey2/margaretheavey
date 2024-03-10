@@ -98,16 +98,17 @@ main {
 
 .projects-container {
   display: flex;
-  flex-direction: row wrap;
-  justify-content: space-around;
 
   width: 80%;
 }
 .project-item-container {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-around;
   background-color: transparent;
   width: 100%;
   height: 15em;
-  border: 0.1px solid #f1f1f1;
+  border: 0.1px solid #8ca0d7;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   margin: 0.75em;
 }
@@ -124,10 +125,6 @@ main {
   transform: rotateY(180deg);
 }
 
-.project-item-front {
-  /* background-color: #bbb; */
-  color: #000;
-}
 .project-item-rear {
   /* background-color: #1e90ff; */
   color: #000;
@@ -138,15 +135,15 @@ main {
 .project-item-rear {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 95%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
 
 .projectImage {
   position: relative;
-  height: 80%;
-  width: 100%;
+  height: 70%;
+  width: 95%;
 }
 .project-item-rear {
   font-size: 0.9em;
