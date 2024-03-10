@@ -42,8 +42,9 @@
     <!--Sections: about me, projects (hyperlinked images, show info pop up wtih explanation of project, goal, & link to github code), cv, 
       skills (show logos e.g HTML5, CSS etc )-->
     <main>
+      
       <section class="info-container">
-        <section class="about-me">
+        <section class="about-me" id="about-me">
           <h2>About Me</h2>
           <p>
             Hi, I'm Margaret. I have a background in Science and am pivoting to
@@ -76,7 +77,7 @@
           </p>
         </section>
         <!-- Technical Skills -->
-        <section class="skills">
+        <section class="skills" id="skills">
           <div>
             <h2>Technical Skills</h2>
             <!-- TODO: list or logo -->
@@ -98,8 +99,12 @@
               <figcaption>Typescript</figcaption>
             </figure>
             <figure class="skills-logo">
-              <img src="/img/JavaLogo.png" alt="Java Logo" />
-              <figcaption>Java</figcaption>
+              <img src="/img/reactLogo.png" alt="Java Logo" />
+              <figcaption>ReactJS</figcaption>
+            </figure>
+            <figure class="skills-logo">
+              <img src="/img/angularLogo.png" alt="Java Logo" />
+              <figcaption>AngularJS</figcaption>
             </figure>
             <figure class="skills-logo">
               <img src="/img/SQLLogo.jpeg" alt="SQL Logo" />
@@ -107,8 +112,9 @@
             </figure>
           </div>
         </section>
+     
         <!-- Projects -->
-        <section class="projects-container-outer">
+        <section class="projects-container-outer" id="projects">
           <h2>Projects</h2>
 
           <div class="projects-container">
@@ -167,13 +173,13 @@
             </div>
         </section>
       </section>
-      <section class="cv-container">
+      <section class="cv-container" id="cv">
         <div class="cv-item-container">
           <h2>Curriculum Vitae</h2>
           <div class="cv-item">
             <h3>Employment</h3>
             <div id="cv-emp-item">
-                           <h4>Regeneron Pharmaceuticals, Limerick</h4>
+              <h4>Regeneron Pharmaceuticals, Limerick</h4>
               <h5>
                 Senior QC Analyst (Technical Resources)
                 <span>December 2023 - Present</span>
