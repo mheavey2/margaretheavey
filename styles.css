@@ -2,6 +2,16 @@
 
 Colour Palette
 
+
+#f1f1f1 white smoke
+#000 black
+#FFFFFF white
+#1e90ff dodger blue
+#8ca0d7 cornflowery blue
+#6580f0 purplish-blue
+#bbb light grey
+
+#dadae3 pale grey
 #B8E0D3 Middle Blue Green
 #D4ECE5 light Cyan
 #E3F3ED mint cream
@@ -11,7 +21,7 @@ Colour Palette
 #A4B4DF light blue
 #EFD6AC Wheat
 #efeff2 very pale grey
-#dadae3 pale grey
+
 #a69eb0 purple/grey
 #000000 black
 #424B54 charcoal
@@ -24,12 +34,23 @@ Colour Palette
 /*-----------------   Global Styles --------------------*/
 * {
   box-sizing: border-box;
-  background-color: #dadae3;
+  background-color: #f1f1f1;
+}
+
+h1,
+h2,
+h3 {
+  color: #1a2c74;
 }
 /* -----------------   Section Styles ------------------- */
 
 /* ***************                 header             ***************  */
 header {
+  display: flex;
+  max-width: 100%;
+}
+
+#header-contact {
   display: flex;
 }
 
@@ -55,24 +76,6 @@ header h2 {
 
   max-width: 100%;
 }
-nav {
-  display: block;
-  align-items: center;
-  height: 3rem;
-}
-/* TODO: move navbar */
-.nav-menu {
-  display: block;
-  list-style-type: none;
-  align-items: center;
-}
-
-.nav-item {
-  display: inline-block;
-  padding: 0.5rem;
-  text-align: center;
-  font-size: 0.9rem;
-}
 
 main {
   display: flex;
@@ -83,10 +86,15 @@ main {
   margin-left: 5em;
 }
 
-.about-me {
+.about-me,
+.skills {
   width: 85%;
 }
 /*  ***************                 projects               *************** */
+
+.projects-container-outer {
+  margin-top: 3rem;
+}
 
 .projects-container {
   display: flex;
@@ -117,12 +125,12 @@ main {
 }
 
 .project-item-front {
-  background-color: #bbb;
+  /* background-color: #bbb; */
   color: #000;
 }
 .project-item-rear {
-  background-color: #1e90ff;
-  color: #ffffff;
+  /* background-color: #1e90ff; */
+  color: #000;
   transform: rotateY(180deg);
   align-content: center;
 }
@@ -149,11 +157,6 @@ main {
   width: 45%;
   margin-right: 5em;
   /* justify-content: flex-end; */
-}
-.cv-item-container {
-  display: block;
-  /* TODO: remove bkgrd col */
-  background-color: #1a2c74;
 }
 
 .cv-item h5 :first-child {
@@ -200,8 +203,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  max-width: 3rem;
+  max-width: 4rem;
   max-height: 3rem;
+  padding: 0.75em;
+  margin: 1em;
+}
+.skills-logo img {
+  width: auto;
+  height: 3em;
 }
 
 figcaption {
@@ -213,6 +222,15 @@ figcaption {
 }
 
 /* ***************                 Footer               *************** */
+
+footer {
+  display: flex;
+  margin-top: 3rem;
+}
+
+footer h2 {
+  padding: 0.2em;
+}
 
 #contactLogoFooter {
   height: 3.5em;
