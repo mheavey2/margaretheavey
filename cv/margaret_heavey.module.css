@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.parent-container {
+  display: grid;
+  grid-template-areas: "side-bar main-container";
+  grid-template-columns: 1fr 4fr;
+
+  background-color: #fdfdfb;
+}
+
+.side-bar {
+  background-color: #868284;
+  color: #fff;
+  font-weight: 400;
+  padding: 0 1em;
+}
+.side-bar h4 {
+  margin: 1em 0.3em;
+  letter-spacing: 0.08em;
+}
+
+.contact-info-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0.5em;
+}
+.side-bar img {
+  margin: 1em;
+  height: 1.5em;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+}
+
+.skills-list {
+  list-style-type: none;
+}
+.skills-list li {
+  margin: 1.5em;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.main-container {
+  margin: 2.5em;
+}
+
+hr {
+  width: 10%;
+  height: 0.2em;
+  background-color: #000;
+  margin: 1.5em 0em;
+}
+.main-container h2 {
+  color: #868284;
+  letter-spacing: 0.08em;
+  font-size: 1.2em;
+}
+.main-container h1,
+h3 {
+  letter-spacing: 0.03em;
+}
+.main-container h3 {
+  margin: 1.3em 0em;
+  font-size: 0.9em;
+}
+.main-container h4 {
+  color: #302f2f;
+  line-height: 1.3em;
+  margin: 0.5em 0em;
+}
+.main-container h5 {
+  color: #403e3f;
+  font-weight: 350;
+  text-align: justify;
+  line-height: 1.5em;
+}
+.main-container p {
+  text-align: justify;
+  line-height: 1.5em;
+  margin: 0.5em 0em;
+}
+.work-experience > div {
+  margin: 1.2em;
+}
+
+ul {
+  line-height: 1.5em;
+  font-size: 1em;
+  padding-left: 0;
+}
+
+#edu-institute {
+  color: #403e3f;
+  font-weight: 350;
+  font-size: 0.83em;
+  text-align: justify;
+  line-height: 1em;
+}
+
+h4 > span {
+  color: #403e3f;
+  font-weight: 350;
+  font-size: 0.9em;
+  text-align: justify;
+  line-height: 1.5em;
+}

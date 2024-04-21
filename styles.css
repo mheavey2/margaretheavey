@@ -122,7 +122,10 @@ main {
 }
 
 .project-item-container:hover .project-item {
-  transform: rotateY(180deg);
+  /* temp hide original transform Y(180) */
+  /* transform: rotateY(180deg); */
+
+  transform: rotate(0.1turn);
 }
 
 .project-item-rear {
