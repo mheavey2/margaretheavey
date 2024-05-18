@@ -3,39 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Margaret Heavey Resume Portfolio</title>
+    <title>Margaret Heavey Website</title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    /> -->
-    <script src="script.js" async></script>
+   
   </head>
 
   <body>
     <header id="header-item">
-      <!--Banner heading with name & Software Developer-->
-
-  
-      <h1>Margaret Heavey</h1>
+        <h1>Margaret Heavey</h1>
       <h2>Web Developer</h2>
- 
-  
-</div>
-
-     
+ </div>
     </header>
-
-    <!--Sections: about me, projects (hyperlinked images, show info pop up wtih explanation of project, goal, & link to github code), cv, 
-      skills (show logos e.g HTML5, CSS etc )-->
     <main>
-      
-      <section class="info-container">
+      <section class="info-container section-container">
         <section class="about-me" id="about-me">
           <h2>About Me</h2>
+          <div class="about-me-info">
           <p>
             Hi, I'm Margaret. I have a background in Science and am pivoting to
-            a career in Software Development. I have spent the last 7 years of
+            a career in Software Development. I have spent the last 8 years of
             my career refining my analytical, technical, problem solving and
             leadership skills in the BioPharmaceutical and Medical Device
             Industry.
@@ -62,169 +48,77 @@
             explore other career opportunities and develop the Software
             Development skills I have learned.
           </p>
+          </div>
           <div class="cv-outer-container">
  <a href="margaret_heavey.html" target="_blank"><button class="cv-button">Go to my CV</button></a>
- <!-- TODO: update cv link -->
- <a href="cvpdflink" download="">
+ <a href="margaret_heavey_CV.pdf" download="margaret_heavey_CV">
  <button class="cv-button">Download my CV</button>
  </a>
           </div>
         
         </section>
         <!-- Technical Skills -->
-        <section class="skills" id="skills">
+        <section class="skills section-container" id="skills">
           <div class="tech-skills">
-            <h2>Technical Skills</h2>
+            <h2>Recent Technical Skills</h2>
             <p>Recently I have been working with:</p>
             <p>CSS, HTML, JavaScript, TypeScript, ReactJS, AngularJS, SQL</p>
-            <!-- <figure class="skills-logo">
-              <img src="./img/CSSLogo.png" alt="CSS Logo" />
-              <figcaption>CSS</figcaption>
-            </figure>
-            <figure class="skills-logo">
-              <img src="./img/HTML5Logo.png" alt="HTML Logo" />
-              <figcaption>HTML</figcaption>
-            </figure>
-            <figure class="skills-logo">
-              <img src="./img/JSLogo.png" alt="Javascript Logo" />
-              <figcaption>Javascript</figcaption>
-            </figure>
-            <figure class="skills-logo">
-              <img src="./img/TSLogo.png" alt="Typescript Logo" />
-              <figcaption>Typescript</figcaption>
-            </figure>
-            <figure class="skills-logo">
-              <img src="./img/reactLogo.png" alt="Java Logo" />
-              <figcaption>ReactJS</figcaption>
-            </figure>
-            <figure class="skills-logo">
-              <img src="./img/angularLogo.png" alt="Java Logo" />
-              <figcaption>AngularJS</figcaption>
-            </figure>
-            <figure class="skills-logo">
-              <img src="./img/SQLLogo.jpeg" alt="SQL Logo" />
-              <figcaption>SQL</figcaption>
-            </figure> -->
+          
           </div>
         </section>
      
         <!-- Projects -->
-        <section class="projects-container-outer" id="projects">
-          <h2>Projects</h2>
+        <section class="projects-container-outer section-container" id="projects">
+          <h2>Some Projects I've Built</h2>
 
           <div class="projects-container">
 <!-- Jammin App -->
           <div class="project-item-container">
-            
-            <div class="project-item">
-              <div class="project-item-front">
+        
               <h3>Jammin App</h3>
+  
               <img class="projectImage" src="./img/jamminAppLoginView.png" alt="Jammin App Image">
-              </div>
-              <div class="project-item-rear">
+             
                 <p>A simple music app created using ReactJS that allows users to search for songs and create and save custom playlists in their Spotify account via the Spotify API using their Spotify login credentials.</p>
-                <p>See the full project on Github:</p>
-                <a href="https://github.com/mheavey2/jammingApp">Jammin App Github</a>
+                <div class="app-btn-container">
+                  <a href="https://jammin-music-app.netlify.app/" target="_blank"><button class="app-btn">See Live Demo</button></a>
+                <a href="https://github.com/mheavey2/jammingApp" target="_blank"><button class="app-btn">Project Github</button></a>
               </div>
-            </div>
+            
             </div>
 
 <!-- Southern Juggling Club Website-->
             <div class="project-item-container">
-            <div class="project-item">
-              <div class="project-item-front">
               <h3>Juggling Club Website</h3>
               <img class="projectImage" src="./img/SouthernJugglingClubWebsite.png" alt="Southern Juggling Club Website Image">
-              </div>
-              <div class="project-item-rear">
                <p>A responsive website created for a juggling club. The site uses a number of responsive layout approaches including flexbox, media queries, responsive units</p>
-                <p>See the full project on Github:</p>
-                <a href="https://github.com/mheavey2/jugglingClubWebsite">Southern Juggling Club Website</a>
-              </div>
-            </div>
-            </div>
+               <div class="app-btn-container">
+                  <a href="https://juggling-club-website.netlify.app/" target="_blank"><button class="app-btn">See Live Demo</button></a>
+                <a href="https://github.com/mheavey2/jugglingClubWebsite" target="_blank"><button class="app-btn">Project Github</button></a>
+               </div>
+                </div>
  <!-- Tic Tac Toe -->
             <div class="project-item-container">
-            <div class="project-item">
-              <div class="project-item-front">
-              <h3>Tic Tac Toe</h3>
+            <h3>Tic Tac Toe</h3>
               <img class="projectImage" src="./img/ticTacToe.png" alt="Tic Tac Toe App Image">
-              </div>
-              <div class="project-item-rear">
-                <p>A simple two player Tic-Tac-Toe (X's and O's) game created using CSS, HTML, Javascript and ReactJS.</p>
-                <p>See the full project on Github:</p>
-                <a href="https://github.com/mheavey2/ticTacToe">Tic Tac Toe App Github</a>
-              </div>
-            </div>
+              <p>A simple two player Tic-Tac-Toe (X's and O's) game created using CSS, HTML, Javascript and ReactJS.</p>
+             <div class="app-btn-container">
+                  <a href="https://tic-tac-toe-x-and-o.netlify.app//" target="_blank"><button class="app-btn">See Live Demo</button></a>
+                <a href="https://github.com/mheavey2/ticTacToe" target="_blank"><button class="app-btn">Project Github</button></a>
+               </div>
             </div>
 
         </section>
-      </section>
-
-
-        </section>
-      </section>
-      <!-- <section class="cv-container" id="cv">
-        <div class="cv-item-container">
-          <h2>Curriculum Vitae</h2>
-          <div class="cv-item">
-            <h3>Employment</h3>
-            <div id="cv-emp-item">
-              <h4>Regeneron Pharmaceuticals, Limerick</h4>
-              <h5>
-                Senior QC Analyst (Technical Resources)
-                <span>December 2023 - Present</span>
-              </h5>
-              <h5>
-                QC Analyst (Technical Resources)
-                <span>October 2022 - Dec 2023</span>
-              </h5>
-
-              <h5>Lead QC Analyst <span>June 2018 - October 2022</span></h5>
-            </div>
-            <div id="cv-emp-item">
-              <h4>Complete Laboratory Solutions (CLS), Galway</h4>
-               <h5>
-                QC Microbiology Team Lead <span>December 2016 - June 2018</span>
-              </h5>
-              <h5>QC Microbiologist <span>May 2016 - December 2016</span></h5>
-            </div>
-          </div>
-
-          <div class="cv-item">
-            <div id="cv-edu-container">
-              <h3>Education</h3>
-              <div id="cv-edu-item">
-                <h4>Higher Diploma in Software Development (NFQ level 8)</h4>
-                <p>
-                Galway Mayo Institute of Technology, Galway
-                 <span>2019-2022</span>
-               </p>
-              </div>
-               <div id="cv-edu-item">
-              <h4>
-                Postgraduate Diploma in Applied Microbiology (NFQ level 9)
-              </h4>
-              <p>
-                National University of Ireland, Galway <span>2015-2016</span>
-              </p>
-              </div>
-               <div id="cv-edu-item">
-              <h4>Master of Science in Ecological Assessment (NFQ level 9)</h4>
-              <p>Universty College Cork <span>2010-2011</span></p>
-              </div>
-               <div id="cv-edu-item">
-              <h4>Bachelor of Science in Microbiology (NFQ level 8)</h4>
-              <p>
-                National University of Ireland, Galway <span>2004-2009</span>
-              </p>
-              </div>
-            </div>
-          
-          </div>
-        </div>
-      </section>
       
+ 
+     <!-- Get in Touch -->
+     <section class="get-in-touch-container section-container">
+      <div class="get-in-touch"></div>
+      <h2>Get in Touch</h2>
+<p>I'm open to new opportunities! If you like what you've seen please do get in touch.</p>
+
+</div>
+     </section>
     </main>
 
 <div class="contact-info-container">
@@ -248,7 +142,8 @@
           alt="LinkedIn Logo"
       /></a>
       </div>
-      </div> -->
+      </div> 
+
 
     <!--footer with contact info-->
     <footer>

@@ -16,6 +16,10 @@ body {
 }
 /* -----------------   Section Styles ------------------- */
 
+.section-container {
+  padding: 1.5em 0em;
+}
+
 /* ***************                 header             ***************  */
 header {
   display: flex;
@@ -64,6 +68,11 @@ main {
   width: 85%;
 }
 
+.about-me-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .cv-outer-container {
   display: flex;
   justify-content: center;
@@ -76,6 +85,14 @@ main {
   padding: 0.7em;
   margin: 1em;
 }
+/*  ***************                 skills               *************** */
+
+.tech-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /*  ***************                 projects               *************** */
 
 .projects-container-outer {
@@ -84,128 +101,52 @@ main {
 
 .projects-container {
   display: flex;
-
   width: 80%;
 }
 .project-item-container {
   display: flex;
-  flex-direction: row wrap;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   background-color: transparent;
   width: 100%;
-  height: 15em;
+  height: 28em;
   border: 0.1px solid #8ca0d7;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin: 0.75em;
-}
-.project-item {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.project-item-container:hover .project-item {
-  /* temp hide original transform Y(180) */
-  /* transform: rotateY(180deg); */
-
-  transform: rotate(0.1turn);
-}
-
-.project-item-rear {
-  /* background-color: #1e90ff; */
-  color: #000;
-  transform: rotateY(180deg);
-  align-content: center;
-}
-.project-item-front,
-.project-item-rear {
-  position: absolute;
-  width: 100%;
-  height: 95%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-.projectImage {
-  position: relative;
-  height: 70%;
-  width: 95%;
-}
-.project-item-rear {
-  font-size: 0.9em;
-}
-/*  ***************                        CV              *************** */
-.cv-container {
-  display: block;
-  width: 45%;
-  margin-right: 5em;
-  /* justify-content: flex-end; */
-}
-
-.cv-item h5 :first-child {
-  font-weight: 200;
-}
-.cv-item h3 {
-  background-color: #8ca0d7;
-}
-#cv-emp-item h4 {
-  color: #6580f0;
-  font-weight: 200;
-}
-#cv-emp-item h5 {
-  margin-left: 1em;
-}
-
-#cv-emp-item li {
-  list-style-type: none;
-  margin-bottom: 1.5em;
-  font-size: 0.8em;
-  font-weight: 800;
-}
-#cv-emp-item li span {
-  font-weight: 200;
-}
-#cv-edu-item p {
-  color: #6580f0;
-  font-size: 0.9em;
-}
-#cv-edu-item span {
-  color: #000000;
-  font-size: 0.9em;
-}
-/* ***************                        skills              *************** */
-.skills {
-  display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
-  align-items: left;
-}
-
-.skills-logo {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  max-width: 4rem;
-  max-height: 3rem;
-  padding: 0.75em;
   margin: 1em;
 }
-.skills-logo img {
-  width: auto;
-  height: 3em;
+
+.project-item-container p {
+  text-align: center;
+  padding: 0.8em;
+  font-size: 0.7em;
+  width: 85%;
+}
+.projectImage {
+  position: relative;
+  height: 10em;
+  width: 80%;
 }
 
-figcaption {
-  margin-top: 20px;
-  text-align: center;
+.app-btn-container {
+  margin: 0.4em;
 }
-.skills h2 {
-  margin-bottom: 1em;
+.app-btn {
+  background-color: #8ca0d7;
+  border-width: 1px;
+  border-radius: 9999px;
+  box-shadow: 2px 2px 4px #1a2c74;
+  padding: 0.8em;
+  font-size: 0.7em;
+  margin: 0.5em;
 }
+
+.app-btn:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  z-index: 4;
+}
+
+/*  ***************                 contact info               *************** */
 
 .contact-info-container {
   position: fixed;
@@ -250,13 +191,18 @@ figcaption {
   z-index: 40;
 }
 
+.get-in-touch {
+  display: flex;
+  justify-content: center;
+}
+
 /* ***************                 Footer               *************** */
 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 8em;
+  height: 15em;
   width: auto;
   background-color: #fff6ec;
   color: #999999;
