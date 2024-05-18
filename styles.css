@@ -170,12 +170,15 @@ main {
 .contact-info-container > *,
 .contactLogos > * {
   background-color: #8ca0d7;
-  padding: 0.3em;
 }
 
+#contact {
+  margin-left: 1em;
+}
 .contactLogos {
   display: flex;
   justify-content: space-between;
+  margin-right: 1em;
 }
 #contactLogo {
   height: 3.5em;
