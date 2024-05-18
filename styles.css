@@ -179,12 +179,14 @@ main {
 #contact {
   margin: 0em 2em;
   width: 20%;
+  height: 30%;
 }
 .contactLogos {
   display: flex;
   justify-content: space-around;
   margin-right: 1em;
   width: 40%;
+  height: 30%;
 }
 .contactLogos a {
   margin: 1em;
