@@ -7,7 +7,6 @@
   display: grid;
   grid-template-areas: "side-bar main-container";
   grid-template-columns: 1fr 4fr;
-
   background-color: #fdfdfb;
 }
 
@@ -15,7 +14,7 @@
   background-color: #868284;
   color: #fff;
   font-weight: 400;
-  padding: 0 1em;
+  padding: 1.4em 1em;
 }
 .side-bar h4 {
   margin: 1em 0.3em;
@@ -36,6 +35,17 @@
 .contact-info-item {
   display: flex;
   align-items: center;
+  padding: 0.8em 0em;
+}
+.contact-info-container h4 {
+  margin-bottom: 3em;
+}
+
+.skills-container {
+  margin: 3em 0.7em;
+}
+.skills-container h4 {
+  margin-bottom: 3em;
 }
 
 .skills-list {
@@ -43,11 +53,25 @@
 }
 .skills-list li {
   margin: 1.5em;
+  padding: 0.8em 0em;
 }
 a {
   text-decoration: none;
   color: #fff;
 }
+
+#download-cv-btn {
+  background-color: #8ca0d7;
+  border-width: 1px;
+  border-radius: 9999px;
+  box-shadow: 2px 2px 4px #1a2c74;
+  padding: 0.7em;
+}
+
+.download-cv-link {
+  margin: 5em;
+}
+
 .main-container {
   margin: 2.5em;
 }

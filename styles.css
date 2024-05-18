@@ -19,6 +19,8 @@ body {
 /* ***************                 header             ***************  */
 header {
   display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 100%;
 }
 
@@ -44,11 +46,17 @@ header h2 {
 
 main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 /*  ***************                 info               *************** */
 .info-container {
-  /* display: flex; */
-  margin-left: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 12em;
+  width: 60%;
 }
 
 .about-me,
@@ -56,6 +64,18 @@ main {
   width: 85%;
 }
 
+.cv-outer-container {
+  display: flex;
+  justify-content: center;
+}
+.cv-button {
+  background-color: #8ca0d7;
+  border-width: 1px;
+  border-radius: 9999px;
+  box-shadow: 2px 2px 4px #1a2c74;
+  padding: 0.7em;
+  margin: 1em;
+}
 /*  ***************                 projects               *************** */
 
 .projects-container-outer {
