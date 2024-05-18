@@ -141,7 +141,8 @@ main {
   padding: 0.8em;
   font-size: 0.7em;
   margin: 0.25em 0.5em;
-  max-width: 60%;
+  width: 60%;
+  height: 90%;
 }
 
 .app-btn:hover {
@@ -185,8 +186,8 @@ main {
   display: flex;
   justify-content: space-around;
   margin-right: 1em;
-  width: 40%;
-  height: 30%;
+  width: 50%;
+  height: 20%;
 }
 .contactLogos a {
   margin: 1em;
