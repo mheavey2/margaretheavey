@@ -34,7 +34,7 @@ Colour Palette
 /*-----------------   Global Styles --------------------*/
 * {
   box-sizing: border-box;
-  background-color: #f1f1f1;
+  background-color: #fff5ee;
 }
 
 h1,
@@ -221,21 +221,59 @@ figcaption {
   margin-bottom: 3rem;
 }
 
+.contact-info-container {
+  position: fixed;
+  left: 38%;
+  bottom: 2rem;
+  z-index: 20;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  width: 30%;
+  background-color: #8ca0d7;
+  border-width: 1px;
+  border-color: #6580f0;
+  border-radius: 9999px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-info-container > *,
+.contactLogos > * {
+  background-color: #8ca0d7;
+  padding: 0.3em;
+}
+
+.contactLogos {
+  display: flex;
+  justify-content: space-between;
+}
+#contactLogo {
+  height: 3.5em;
+  width: 3.5em;
+  background-color: #8ca0d7;
+  padding: 0.1 0.5em;
+}
+
+.contactLogos img:hover {
+  border: 3px solid #6580f0;
+  transform: scale(1.5);
+  transition: 0.5s;
+  z-index: 40;
+}
+
 /* ***************                 Footer               *************** */
 
 footer {
   display: flex;
-  margin-top: 3rem;
-}
-
-footer h2 {
-  padding: 0.2em;
-}
-
-#contactLogoFooter {
-  height: 3.5em;
-  width: 3.5em;
-  background-color: inherit;
-  padding: 0.5em;
-  margin: 0.5em;
+  justify-content: center;
+  align-items: center;
+  height: 8em;
+  width: auto;
+  background-color: #fff6ec;
+  color: #999999;
+  padding: 0;
+  margin: 0;
 }
