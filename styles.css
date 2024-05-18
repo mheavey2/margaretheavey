@@ -1,36 +1,3 @@
-/* -----------------------------
-
-Colour Palette
-
-
-#f1f1f1 white smoke
-#000 black
-#FFFFFF white
-#1e90ff dodger blue
-#8ca0d7 cornflowery blue
-#6580f0 purplish-blue
-#bbb light grey
-
-#dadae3 pale grey
-#B8E0D3 Middle Blue Green
-#D4ECE5 light Cyan
-#E3F3ED mint cream
-#FFFFFF white
-#8CA0D7 Wild Blue Yonder (light blue)
-#1A2C74 Space Cadet (blue)
-#A4B4DF light blue
-#EFD6AC Wheat
-#efeff2 very pale grey
-
-#a69eb0 purple/grey
-#000000 black
-#424B54 charcoal
-
-
-
-
--------------------------------*/
-
 /*-----------------   Global Styles --------------------*/
 * {
   box-sizing: border-box;
@@ -41,6 +8,11 @@ h1,
 h2,
 h3 {
   color: #1a2c74;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  scroll-behavior: smooth;
 }
 /* -----------------   Section Styles ------------------- */
 
@@ -61,19 +33,12 @@ header h2 {
   margin: 1.1em 2em;
 }
 
-#contactLogo {
-  height: 1.7em;
-  width: 1.7em;
-  background-color: inherit;
-}
-
 #header-item {
   margin: 0rem;
   padding: 0rem;
   text-align: left;
   height: 100%;
   width: 100%;
-
   max-width: 100%;
 }
 
@@ -90,10 +55,11 @@ main {
 .skills {
   width: 85%;
 }
+
 /*  ***************                 projects               *************** */
 
 .projects-container-outer {
-  margin-top: 3rem;
+  margin-top: 1em;
 }
 
 .projects-container {
@@ -218,7 +184,7 @@ figcaption {
   text-align: center;
 }
 .skills h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 1em;
 }
 
 .contact-info-container {
