@@ -186,7 +186,7 @@ main {
   display: flex;
   justify-content: space-around;
   margin-right: 1em;
-  width: 50%;
+  width: 30%;
   height: 20%;
 }
 .contactLogos a {
@@ -197,7 +197,7 @@ main {
   height: 3.5em;
   width: 3.5em;
   background-color: #8ca0d7;
-  padding: 0.1 0.5em;
+  /* padding: 0.1 0.5em; */
 }
 
 .contactLogos img:hover {
