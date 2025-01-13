@@ -10,16 +10,33 @@ h3 {
   color: #1a2c74;
 }
 
+/* general fonts */
+
+h1 {
+  font-size: 5.5rem;
+  margin-left: 0.5em;
+}
+h2 {
+  margin: 1.1em 2em;
+  font-size: 2rem;
+}
+p {
+  font-size: 1.2rem;
+}
+
 body {
-  font-family: Poppins, sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   scroll-behavior: smooth;
 }
-/* -----------------   Section Styles ------------------- */
 
-.section-container {
-  /* padding: 1em 0em; */
+main {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  line-height: 3.5rem;
+  letter-spacing: 0.2em;
 }
-
 /* ***************                 header             ***************  */
 header {
   display: flex;
@@ -32,15 +49,8 @@ header {
   display: flex;
 }
 
-header h1 {
-  margin-left: 2em;
-}
-header h2 {
-  margin: 1.1em 2em;
-}
-
 #header-item {
-  margin: 0rem;
+  margin: 4em 1em, 2em;
   padding: 0rem;
   text-align: left;
   height: 100%;
@@ -48,34 +58,48 @@ header h2 {
   max-width: 100%;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 /*  ***************                 info               *************** */
 .info-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 12em;
-  width: 60%;
+  margin-left: 1.5em;
+  width: 80%;
+}
+.info-container h2 {
+  font-size: 2rem;
+  width: 15%;
+  padding: 1em 0em 1em 1em;
+  height: auto;
 }
 
 .about-me,
-.skills {
-  width: 85%;
+.tech-skills,
+.projects-container-outer,
+.get-in-touch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8em;
+  margin: 2.75em 0em;
 }
 
-.about-me-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#about-me-hi,
+.tech-skills p {
+  width: 60%;
 }
+#about-me-hi :first-child {
+  font-weight: 600;
+  font-size: 3rem;
+  color: #1a2c74;
+}
+
+/*  ***************                 CV               *************** */
 .cv-outer-container {
   display: flex;
   justify-content: center;
+  gap: 4em;
+  margin-left: 15em;
 }
 .cv-button {
   background-color: #8ca0d7;
@@ -84,35 +108,33 @@ main {
   box-shadow: 2px 2px 4px #1a2c74;
   padding: 0.7em;
   margin: 1em;
-}
-/*  ***************                 skills               *************** */
-
-.tech-skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 18em;
+  height: auto;
+  font-weight: 800;
+  letter-spacing: 0.2em;
 }
 
 /*  ***************                 projects               *************** */
 
-.projects-container-outer {
+/* .projects-container-outer {
   margin-top: 1em;
-}
+} */
 
 .projects-container {
   display: flex;
-  width: 85%;
+  flex-direction: column;
+  /* width: 85%; */
 }
 .project-item-container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  /* justify-content: space-around; */
   align-items: center;
   background-color: transparent;
-  width: 100%;
+  /* width: 100%;
   height: 28em;
   border: 0.1px solid #8ca0d7;
-  margin: 1em;
+  margin: 1em; */
 }
 
 .project-item-container p {
@@ -206,13 +228,6 @@ main {
   transform: scale(1.5);
   transition: 0.5s;
   z-index: 40;
-}
-
-.get-in-touch {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 85%;
 }
 
 /* ***************                 Footer               *************** */
