@@ -420,7 +420,9 @@ body {
     display: block;
   }
   /*  ****      CV     ***** */
-
+  .contactLogos img:hover {
+    transform: scale(1.5);
+  }
   /*  ****      Projects     ***** */
   .projects-container-outer {
     margin-left: 12rem;
