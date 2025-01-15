@@ -402,7 +402,28 @@ body {
   }
   /*  *********      main    *********** */
   /*  ****      info   ***** */
+  .info-container {
+    width: 100%;
+  }
+  .about-me {
+    /* margin: 5rem; */
+    margin-left: 10rem;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  #about-me-hi {
+    /* align-items: flex-start;
+    flex-direction: row; */
+    display: block;
+    margin: 0rem 15rem 5rem;
+  }
 
+  .tech-skills {
+    /* align-items: flex-start;
+    flex-direction: row;
+    width: 100%; */
+    display: block;
+  }
   /*  ****      CV     ***** */
 
   /*  ****      Projects     ***** */
