@@ -427,9 +427,19 @@ body {
   /*  ****      CV     ***** */
 
   /*  ****      Projects     ***** */
-
+  .projects-container-outer {
+    margin-left: 12rem;
+  }
+  /* .projects-container-outer h2 {
+    width: 100%;
+  } */
   /*  ****      Get in Touch     ***** */
-
+  .get-in-touch-container {
+    flex-wrap: nowrap;
+  }
   /*  *********      footer    *********** */
+  footer {
+    margin-left: 8rem;
+  }
 }
 /* ---------- mid & large screen end  ----------  */
