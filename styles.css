@@ -412,16 +412,11 @@ body {
     width: 100%;
   }
   #about-me-hi {
-    /* align-items: flex-start;
-    flex-direction: row; */
     display: block;
     margin: 0rem 15rem 5rem;
   }
 
   .tech-skills {
-    /* align-items: flex-start;
-    flex-direction: row;
-    width: 100%; */
     display: block;
   }
   /*  ****      CV     ***** */
@@ -430,9 +425,17 @@ body {
   .projects-container-outer {
     margin-left: 12rem;
   }
-  /* .projects-container-outer h2 {
+  .projects-container {
     width: 100%;
-  } */
+    max-width: 100%;
+  }
+  .project-item-container {
+    flex-direction: row;
+  }
+  .projectImage {
+    max-width: 30rem;
+  }
+
   /*  ****      Get in Touch     ***** */
   .get-in-touch-container {
     flex-wrap: nowrap;
