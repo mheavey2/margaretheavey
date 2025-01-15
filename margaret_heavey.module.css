@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .parent-container {
@@ -73,59 +75,83 @@ a {
 }
 
 .main-container {
-  margin: 2.5em;
+  margin: 2.5rem;
 }
 
 hr {
   width: 10%;
   height: 0.2em;
   background-color: #000;
-  margin: 1.5em 0em;
+  margin: 1.5rem 0rem;
 }
 .main-container h2 {
   color: #868284;
-  letter-spacing: 0.08em;
-  font-size: 1.2em;
+
+  font-size: 1.2rem;
 }
-.main-container h1,
-h3 {
-  letter-spacing: 0.03em;
+
+.main-container {
+  letter-spacing: 0.1rem;
 }
 .main-container h3 {
-  margin: 1.3em 0em;
-  font-size: 0.9em;
+  margin: 1.3rem 0rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 4rem;
 }
 .main-container h4 {
   color: #302f2f;
-  line-height: 1.3em;
-  margin: 0.5em 0em;
+
+  line-height: 3rem;
+  margin: 1.5rem 0rem;
 }
-.main-container h5 {
-  color: #403e3f;
-  font-weight: 350;
-  text-align: justify;
-  line-height: 1.5em;
-}
+
 .main-container p {
   text-align: justify;
-  line-height: 1.5em;
-  margin: 0.5em 0em;
+  line-height: 2.5rem;
+  font-size: 1rem;
+  margin: 0.5rem 0rem;
 }
-.work-experience > div {
-  margin: 1.2em;
+
+.main-heading {
+  margin-bottom: 3rem;
+}
+
+.about {
+  margin: 3rem;
+}
+.work-experience h4 {
+  font-size: 1.4rem;
+}
+.work-experience-item {
+  margin: 3rem;
 }
 
 ul {
-  line-height: 1.5em;
-  font-size: 1em;
+  line-height: 2.5rem;
+  font-size: 1rem;
   padding-left: 0;
+  margin-left: 3rem;
+}
+#key-skills-item {
+  margin-top: 2rem;
 }
 
+#skills-span {
+  font-weight: 700;
+}
+
+.edu-info {
+  margin: 3rem;
+}
+.edu-info h4 {
+  font-size: 1.1rem;
+}
 #edu-institute {
   color: #403e3f;
   font-weight: 350;
   font-size: 0.83em;
-  text-align: justify;
+  text-align: center;
   line-height: 1em;
 }
 
