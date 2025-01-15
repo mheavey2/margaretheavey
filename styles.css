@@ -34,15 +34,6 @@ body {
   scroll-behavior: smooth;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  line-height: 3.5rem;
-  letter-spacing: 0.2em;
-}
-
 /* ---------- small screen start  ----------  */
 @media screen and (min-width: 200px) {
   /*  *********      header    *********** */
@@ -82,6 +73,8 @@ main {
     align-items: center;
     margin: 0em;
     padding: 0em;
+    list-style: none;
+    max-width: 60%;
   }
 
   .nav ul {
@@ -90,13 +83,26 @@ main {
   .nav li {
     margin: 0.8em 0em;
   }
-  #info {
-    margin-top: 30em;
+
+  /* .nav li {
+    margin-left: 2em;
+  } */
+  .nav a {
+    line-height: 1em;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.5em;
+    background-color: #8ca0d7;
+  }
+  .nav a:hover,
+  nav a:focus {
+    border-bottom: 3px solid #1a2c74;
+    color: #1a2c74;
+    transform: scale(1.5);
+    transition: 0.5s;
   }
 
-  #skills {
-    margin-top: 0em;
-  }
   /*  *****  contact info   ****** */
 
   .contact-info-container > *,
@@ -134,52 +140,43 @@ main {
     z-index: 40;
   }
 
-  .nav {
-    display: flex;
-    list-style: none;
-    max-width: 60%;
-  }
-  .nav li {
-    margin-left: 2em;
-  }
-  .nav a {
-    line-height: 1em;
-    list-style: none;
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 0.5em;
-    background-color: #8ca0d7;
-  }
-  .nav a:hover,
-  nav a:focus {
-    border-bottom: 3px solid #1a2c74;
-    color: #1a2c74;
-    transform: scale(1.5);
-    transition: 0.5s;
-  }
-
   /*  *********      main    *********** */
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 3.5rem;
+    letter-spacing: 0.2em;
+    max-width: 90%;
+  }
   /*  ****      info   ***** */
   .info-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 20rem 1rem;
-    width: 80%;
+    width: 50%;
   }
 
-  .about-me,
-  .tech-skills {
+  .about-me {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
-    gap: 8em;
-    margin: 10em 2em 1.75em 10em;
+    justify-content: center;
+    margin: 10rem 2rem 1.75rem 8rem;
   }
 
   #about-me-hi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 5rem 5rem;
     width: 90%;
   }
   #about-me-hi :first-child {
@@ -187,58 +184,40 @@ main {
     font-size: 3rem;
     color: #1a2c74;
   }
-
   .tech-skills {
-    margin-top: 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0rem 5rem 5rem;
+    width: 90%;
   }
-  #skills span {
+
+  .tech-skills span {
     font-weight: 600;
     font-size: 1.5rem;
     color: #1a2c74;
   }
 
   /*  ****      CV     ***** */
-  /*  ****      Projects     ***** */
-  /*  ****      Get in Touch     ***** */
-  /*  *********      footer    *********** */
-}
-/* ---------- small screen end  ----------  */
-
-/* ---------- mid & large screen start  ----------  */
-
-@media screen and (min-width: 601px) {
-  /*  *********      header    *********** */
-
-  /*  *****  contact info   ****** */
-
-  .contact-info-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    opacity: 1;
-  }
-
-  .contact-info-container > * {
-    flex-direction: row;
-  }
-  /*  *********      main    *********** */
-  /*  ****      info   ***** */
-  /*  ****      CV     ***** */
 
   .cv-outer-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4em;
-    margin-left: 15em;
-    margin-top: 5em;
+
+    margin-left: 8rem;
+    margin-top: 5rem;
   }
   .cv-button {
     background-color: #8ca0d7;
     border-width: 1px;
     border-radius: 9999px;
     box-shadow: 2px 2px 4px #1a2c74;
-    padding: 0.7em;
-    margin: 1em;
+    padding: 2em;
+    margin: 3.5em;
     width: 18em;
     height: auto;
     font-weight: 800;
@@ -246,14 +225,15 @@ main {
   }
   /*  ****      Projects     ***** */
 
-  .projects-container-outer,
-  .get-in-touch {
+  .projects-container-outer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 10em;
+    margin-top: 5rem;
+    margin-left: 20rem;
+    width: 100%;
   }
 
   .projects-container {
@@ -261,17 +241,17 @@ main {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 70%;
+    max-width: 90%;
   }
 
   .project-item-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-
-    gap: 5em;
-    margin: 5em 3em;
+    gap: 1em;
+    margin: 5em 1em;
+    width: 90%;
     border-width: 0.25rem;
     border-radius: 10px;
     box-shadow: 2px 2px 10px #1a2c74;
@@ -279,34 +259,42 @@ main {
 
   .projectImage {
     height: auto;
-    width: 35em;
-    padding: 2em;
+    width: 25rem;
+    padding: 0.5em;
     border-radius: 10%;
+    margin: 2em;
+    max-width: 90%;
   }
 
   .project-item-info {
-    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1em 0.5em;
   }
   .project-item-header {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    margin-left: 0.5em;
   }
 
   .project-item-header-links {
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 0.5em;
-    margin: 0.2em 2em;
+    /* margin: 0.2em 2em; */
     justify-content: space-between;
   }
   .project-item-header-links a {
     margin: 1em;
   }
   .project-item-header-links img {
-    height: 2.5em;
-    width: 2.5em;
+    height: 2em;
+    width: 2em;
   }
 
   .project-item-header-links a:hover {
@@ -315,19 +303,31 @@ main {
     transform: scale(1.5);
     transition: 0.5s;
   }
+  .project-item-info p {
+    margin: 0em 1.5em 1.5em;
+  }
   /*  ****      Get in Touch     ***** */
-
-  /*  *********      footer    *********** */
-
-  footer {
+  .get-in-touch-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    height: 15em;
-    width: auto;
-    background-color: #fff5ee;
-    padding: 0;
-    margin: 0;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+  .get-in-touch {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-left: 15rem;
+    width: 100%;
+  }
+  .get-in-touch p {
+    margin-left: 5rem;
   }
 
   .footer-contacts {
@@ -349,5 +349,66 @@ main {
     transform: scale(1.5);
     transition: 0.5s;
   }
+  .footer-contact-logo {
+    width: 4rem;
+    height: 4rem;
+  }
+  /*  *********      footer    *********** */
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+    width: 100%;
+    background-color: #fff5ee;
+    padding: 0;
+    margin-top: 5em;
+    margin-left: 15rem;
+  }
+}
+/* ---------- small screen end  ----------  */
+
+/* ---------- mid & large screen start  ----------  */
+
+@media screen and (min-width: 601px) {
+  /*  *********      header    *********** */
+
+  /*  *****  contact info   ****** */
+
+  .contact-info-container {
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: 1;
+  }
+
+  .contact-info-container > * {
+    flex-direction: row;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+    margin-left: 3em;
+  }
+  .nav ul {
+    flex-direction: row;
+  }
+  .contactLogos {
+    width: 20%;
+    justify-content: flex-end;
+    margin-right: 3em;
+  }
+  /*  *********      main    *********** */
+  /*  ****      info   ***** */
+
+  /*  ****      CV     ***** */
+
+  /*  ****      Projects     ***** */
+
+  /*  ****      Get in Touch     ***** */
+
+  /*  *********      footer    *********** */
 }
 /* ---------- mid & large screen end  ----------  */
