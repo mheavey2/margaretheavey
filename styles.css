@@ -282,7 +282,6 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 0.5em;
-    /* margin: 0.2em 2em; */
     justify-content: space-between;
   }
   .project-item-header-links a {
@@ -441,14 +440,15 @@ body {
   }
   /*  ****      Projects     ***** */
   .projects-container-outer {
-    margin-left: 12rem;
+    margin-left: 17rem;
   }
   .projects-container {
-    width: 100%;
-    max-width: 100%;
+    width: 90%;
+    max-width: 90%;
   }
   .project-item-container {
     flex-direction: row;
+    margin-left: 5rem;
   }
   .projectImage {
     max-width: 30rem;
