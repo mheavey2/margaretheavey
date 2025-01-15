@@ -84,9 +84,6 @@ body {
     margin: 0.8em 0em;
   }
 
-  /* .nav li {
-    margin-left: 2em;
-  } */
   .nav a {
     line-height: 1em;
     list-style: none;
@@ -120,7 +117,6 @@ body {
     margin: 0em;
     width: 40%;
     height: auto;
-    /* gap: 0.5em; */
   }
   .contactLogos a {
     margin: 0.5em;
@@ -306,6 +302,26 @@ body {
   .project-item-info p {
     margin: 0em 1.5em 1.5em;
   }
+  .project-item-technologies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0em;
+    margin-bottom: 5em;
+    width: 80%;
+    height: auto;
+    color: #1a2c74;
+  }
+  .project-item-technologies li {
+    list-style: none;
+    margin: 0.2em;
+    font-weight: 600;
+    background-color: #8ca0d7;
+    padding: 0.3em;
+    line-height: 1.3em;
+  }
   /*  ****      Get in Touch     ***** */
   .get-in-touch-container {
     display: flex;
@@ -436,6 +452,9 @@ body {
   }
   .projectImage {
     max-width: 30rem;
+  }
+  .project-item-technologies {
+    flex-wrap: nowrap;
   }
 
   /*  ****      Get in Touch     ***** */
