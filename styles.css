@@ -206,7 +206,9 @@ body {
     justify-content: center;
     line-height: 3.5rem;
     letter-spacing: 0.2em;
-    /* max-width: 90%; */
+    width: 90%;
+    margin: 0rem;
+    padding: 0rem;
   }
 }
 @media screen and (min-width: 601px) {
@@ -223,7 +225,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0rem;
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -261,7 +263,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 12rem 0rem 2rem;
-    padding: 0rem 10rem;
+    padding: 0rem 5rem;
   }
 }
 
@@ -332,7 +334,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    margin-left: 8rem;
+    margin-left: 0rem;
   }
 }
 @media screen and (min-width: 200px) {
@@ -351,48 +353,60 @@ body {
 }
 /*  ****      Projects     ***** */
 @media screen and (min-width: 200px) {
-  .projects-container-outer {
+  /* .projects-container-outer { */
     /* display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
-    margin-left: 20rem;
-    width: 100%; */
-  }
-}
+    margin: 12rem 0rem 2rem;
+    padding: 0rem 10rem; */
+    
+  /* } */
+/* } */
 @media screen and (min-width: 601px) {
   /* .projects-container-outer {
     margin-left: 17rem;
   } */
 }
 
+.projects-container h2 {
+margin: 5rem 0rem;
+padding: 3.5rem;
+/* stop text wrapping */
+white-space: nowrap;
+}
+
+
 @media screen and (min-width: 200px) {
-  /* .projects-container {
+  .projects-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    max-width: 90%;
-  } */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 0rem; 
+    width: 100%;
+    
+        } 
 }
 @media screen and (min-width: 601px) {
-  /* .projects-container {
-    width: 90%;
-    max-width: 90%;
-  } */
+ 
 }
 
 @media screen and (min-width: 200px) {
   .project-item-container {
-    /* display: flex;
+    position:relative;
+    /* right: 0%; */
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 1em;
-    margin: 5em 1em;
-    width: 90%;*/
+    /* gap: 1em; */
+    margin: 3rem 1.5rem;
+    padding: 0em;
+    width: 30rem;
     border-width: 0.25rem;
     border-radius: 10px;
     box-shadow: 2px 2px 10px #1a2c74;
