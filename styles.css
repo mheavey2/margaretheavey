@@ -374,6 +374,12 @@ body {
     width: 100%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .project-item-container {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
 
 @media screen and (min-width: 200px) {
   .projectImage {
@@ -399,6 +405,13 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0.1em 0.5em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-item-info {
+    /* margin: 0; */
+    /* width: 80%; */
   }
 }
 @media screen and (min-width: 200px) {
@@ -455,11 +468,6 @@ body {
     width: 80%;
     height: auto;
     color: #1a2c74;
-  }
-}
-@media screen and (min-width: 601px) {
-  .project-item-technologies {
-    flex-wrap: nowrap;
   }
 }
 
