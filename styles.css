@@ -213,7 +213,7 @@ body {
   main {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     line-height: 2rem;
     /* text-align: center; */
@@ -241,7 +241,7 @@ body {
   .section-container {
     flex-wrap: nowrap;
     /* width */
-    align-items: center;
+    /* align-items: center; */
   }
 }
 
@@ -252,8 +252,8 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 12rem 0rem 2rem;
-    /* padding-right: 1.5rem; */
+    margin: 12rem 5rem 2rem;
+    width: 90%;
   }
 }
 
@@ -273,9 +273,9 @@ body {
 
 @media screen and (min-width: 200px) {
   #about-me-hi {
-    margin: 0rem 5rem 2rem;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
+    margin-bottom: 2rem;
   }
 }
 
@@ -295,14 +295,19 @@ body {
 }
 @media screen and (min-width: 200px) {
   .tech-skills {
-    width: 100%;
-    text-align: center;
-    margin: 0rem 5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+    list-style: none;
+    margin-top: 1rem;
   }
 }
 
 @media screen and (min-width: 200px) {
-  .tech-skills span {
+  .tech-skills-item {
     font-weight: 600;
     font-size: 1.5rem;
     color: #151418;
@@ -318,9 +323,9 @@ body {
     border-radius: 9999px;
     box-shadow: 0px 15px 22px #c8acf2;
     padding: 1em;
-    margin-left: 6em;
+    /* margin-left: 3em; */
     margin-bottom: 2em;
-    width: 90%;
+    width: 100%;
     height: auto;
     font-weight: 500;
     letter-spacing: 0.1em;
@@ -362,7 +367,7 @@ body {
     margin: 1rem 1.5rem;
     width: 25rem;
     border-width: 0.25rem;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0px 15px 72px #c8acf2;
     background-color: #fff;
   }
@@ -403,6 +408,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0.1em;
+    width: 90%;
   }
 }
 
@@ -530,20 +536,27 @@ body {
 
 @media screen and (min-width: 200px) {
   footer {
-    /* display: flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap; */
     height: 5rem;
-    color: #939397;
-    margin: 5rem 5rem 0rem;
-    padding: 2rem;
 
+    margin: 5rem 5rem 0rem;
+    padding-bottom: 6rem;
     width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
   footer {
     width: 90%;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  footer p {
+    margin: 0rem;
+    font-size: 1rem;
+    color: #939397;
   }
 }
