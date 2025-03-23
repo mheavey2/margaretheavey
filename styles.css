@@ -48,26 +48,32 @@ body {
 
 @media screen and (min-width: 200px) {
   /*  *********      header    *********** */
-
+  header {
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    /* -webkit-box-pack: center; */
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 6rem;
+    padding: 0px 1rem;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    transition: background 0.45s;
+    background-color: #c8acf2;
+    opacity: 0.6;
+  }
   .contact-info-container {
     display: flex;
-    flex-direction: column;
+
     text-align: center;
+    align-self: stretch;
     align-items: center;
-    justify-content: center;
-    opacity: 0.7;
-    width: 90%;
-    max-width: 70%;
-    position: fixed;
-    left: 15%;
-    right: 15%;
-    top: 0.5rem;
-    z-index: 20;
-    margin: 1rem;
-    background-color: #8ca0d7;
-    border-width: 1px;
-    border-color: #6580f0;
-    border-radius: 9999px;
+    justify-content: space-between;
+    width: 100%;
+    background-color: transparent;
   }
 }
 @media screen and (min-width: 601px) {
@@ -98,14 +104,14 @@ body {
 @media screen and (min-width: 200px) {
   .nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     margin: 0em;
     padding: 0em;
     list-style: none;
-    max-width: 60%;
+    max-width: 80%;
   }
 }
 @media screen and (min-width: 601px) {
@@ -116,19 +122,10 @@ body {
     margin-left: 3em;
   }
 }
-@media screen and (min-width: 200px) {
-  .nav ul {
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 601px) {
-  .nav ul {
-    flex-direction: row;
-  }
-}
+
 @media screen and (min-width: 200px) {
   .nav li {
-    margin: 0.8em 0em;
+    margin: 0.8em 0.5em;
   }
 }
 @media screen and (min-width: 200px) {
@@ -138,14 +135,14 @@ body {
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.5em;
-    background-color: #8ca0d7;
+    background-color: transparent;
   }
 }
 @media screen and (min-width: 200px) {
   .nav a:hover,
   nav a:focus {
-    border-bottom: 3px solid #1a2c74;
-    color: #1a2c74;
+    border-bottom: 3px solid #fff;
+    color: #151418;
     transform: scale(1.5);
     transition: 0.5s;
   }
@@ -156,7 +153,7 @@ body {
   .contact-info-container > *,
   .nav > *,
   .contactLogos > * {
-    background-color: #8ca0d7;
+    background-color: transparent;
   }
 }
 @media screen and (min-width: 200px) {
@@ -190,13 +187,13 @@ body {
   #contactLogo {
     height: 1.75em;
     width: 1.75em;
-    background-color: #8ca0d7;
+    background-color: transparent;
     padding: 0.1em;
   }
 }
 @media screen and (min-width: 200px) {
   .contactLogos img:hover {
-    border-bottom: 3px solid #1a2c74;
+    border-bottom: 3px solid #fff;
     transform: scale(2);
     transition: 0.5s;
     z-index: 40;
@@ -213,14 +210,8 @@ body {
   main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     line-height: 2rem;
-    /* text-align: center; */
-    /* letter-spacing: 0.2em; */
-    /* width: 100%; */
-    /* margin: 0rem;
-    padding: 0rem; */
+    width: 100%;
   }
 }
 
@@ -232,7 +223,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* margin: 0rem; */
     width: 100%;
   }
 }
@@ -240,8 +230,6 @@ body {
 @media screen and (min-width: 601px) {
   .section-container {
     flex-wrap: nowrap;
-    /* width */
-    /* align-items: center; */
   }
 }
 
@@ -273,9 +261,13 @@ body {
 
 @media screen and (min-width: 200px) {
   #about-me-hi {
-    /* width: 100%; */
     text-align: center;
     margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 601px) {
+  #about-me-hi {
+    width: 75%;
   }
 }
 
@@ -283,7 +275,6 @@ body {
   #about-me h1 {
     font-weight: 400;
     font-size: 3rem;
-
     text-wrap: nowrap;
     background: linear-gradient(to right, #5a0dcf, #d863e7);
     -webkit-background-clip: text;
@@ -315,7 +306,15 @@ body {
 }
 
 /*  ****      CV     ***** */
-
+@media screen and (min-width: 200px) {
+  .cv-outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 200px) {
   .cv-button {
     background-color: #9a68e6;
@@ -323,8 +322,7 @@ body {
     border-radius: 9999px;
     box-shadow: 0px 15px 22px #c8acf2;
     padding: 1em;
-    /* margin-left: 3em; */
-    margin-bottom: 2em;
+    margin: 5em 0em 2em;
     width: 100%;
     height: auto;
     font-weight: 500;
@@ -348,7 +346,6 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 12rem;
-    /* width: 100%; */
   }
 }
 @media screen and (min-width: 601px) {
@@ -374,7 +371,7 @@ body {
 }
 @media screen and (min-width: 601px) {
   .project-item-container {
-    width: 100%;
+    width: 90%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -409,6 +406,7 @@ body {
     align-items: center;
     margin: 0.1em;
     width: 90%;
+    background-color: transparent;
   }
 }
 
@@ -418,7 +416,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* margin-left: 0.5em; */
   }
 }
 @media screen and (min-width: 200px) {
@@ -495,8 +492,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    /* padding: 5rem; */
-    /* width: 35rem; */
     gap: 1rem;
     margin: 12rem 3rem 2rem;
   }
@@ -509,6 +504,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    margin-top: 3em;
   }
 }
 @media screen and (min-width: 200px) {
@@ -530,6 +526,9 @@ body {
   .footer-contact-logo {
     width: 2.5rem;
     height: 2.5rem;
+    border-width: 1px;
+    border-radius: 9999px;
+    box-shadow: 0px 10px 25px #c8acf2;
   }
 }
 /*  *********      footer    *********** */
@@ -537,26 +536,25 @@ body {
 @media screen and (min-width: 200px) {
   footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 5rem;
-
-    margin: 5rem 5rem 0rem;
+    margin: 8rem 3.5rem 0rem;
     padding-bottom: 6rem;
     width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
   footer {
-    width: 90%;
+    margin: 8rem 2rem 0rem;
   }
 }
 
 @media screen and (min-width: 200px) {
   footer p {
     margin: 0rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #939397;
   }
 }
